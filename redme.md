@@ -7,5 +7,5 @@ sudo insmod rand_module.ko // cai dat module hello.ko vao kernel
 lsmod | grep hello // Kiem tra module da lap vao hay chua
 sudo rmmod rand_module // Xoa module hello ra khoi kernel
 
-
+cat /dev/rand_device
 cat /proc/devices 
