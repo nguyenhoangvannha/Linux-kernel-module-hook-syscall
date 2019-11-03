@@ -1,0 +1,1 @@
+cmd_/home/naco/Documents/HDH_DA2/source/phan2/hook_mod.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/naco/Documents/HDH_DA2/source/phan2/hook_mod.ko /home/naco/Documents/HDH_DA2/source/phan2/hook_mod.o /home/naco/Documents/HDH_DA2/source/phan2/hook_mod.mod.o
