@@ -1,3 +1,36 @@
+
+Môi trường: Ubuntu 14.04
+Linux kernel: 4.4.0-142-generic
+Các package yêu cầu: make, gcc
+
+Phần 1. Linux kernel module dùng để tạo ra số ngẫu nhiên.
+1.1 Build project và cài module.
+- Mở terminal.
+- cd vào thư mục source/phan1/kernelspace.
+- chạy lệnh 'make' để build
+- chạy lệnh 'sudo insmod rand_module.ko'
+Kết thúc lệnh trên thì module đã được lắp vào.
+
+1.2 Test module vừa gắn vào
+- Mở terminal
+- cd vào thư mục source/phan1/userspace.
+-   chạy lệnh 'make' để build
+- chạy lênh 'sudo ./random_test' để test module vừa gắn vào
+- màn hình terminal sẽ hiển thị số ngẫu nhiên nhận được.
+
+Phần 2. Chương trình hook vào một system call.
+2.1 Build project và cài module.
+- Mở terminal.
+- cd vào thư mục source/phan2
+- chạy lệnh 'make' để build
+- chạy lệnh 'sudo insmod hook_mod.ko'
+Kết thúc lệnh trên thì module đã được lắp vào.
+
+2.2 Test module vừa gắn vào
+- Mở terminal
+- chạy lệnh 'dmesg' và xem kết quả log, các log sẽ bắt đầu bằng từ 'HOOK'
+
+-------------------------------------------------------------------------
 printk() // Logging
 
 
